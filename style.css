@@ -19,6 +19,7 @@
     height: 1vw;
     width: 1vw;
     /* border: 2px solid rgba(0, 0, 0, 0.537); */
+    border-radius:50%;
     z-index: 400;
     background-color: #9e9edc;
     position: fixed;
