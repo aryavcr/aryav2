@@ -22,12 +22,7 @@
     z-index: 400;
     background-color: #9e9edc;
     position: fixed;
-    border-radius: 50%;
-    animation-name: spin;
-    animation-timing-function: linear;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-    /* display: none; */
+    display: none;
 }
 
 
