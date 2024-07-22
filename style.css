@@ -1,0 +1,566 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: 'Montreal';
+    src: url('./fonts/PPNeueMontreal-Medium.otf');
+}
+@font-face {
+    font-family: 'Montreal2';
+    src: url('./fonts/PPNeueMontreal-Book.otf');
+}
+
+
+.crsr {
+    height: 1vw;
+    width: 1vw;
+    /* border: 2px solid rgba(0, 0, 0, 0.537); */
+    z-index: 400;
+    background-color: #9e9edc;
+    position: fixed;
+    border-radius: 50%;
+    /* display: none; */
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #174727;
+}
+.symbols {
+    color: #b6b6f2;
+    font-weight: 1000;
+    animation-name: spin;
+    animation-timing-function: linear;
+    animation-duration: 7s;
+    animation-iteration-count: infinite
+}
+
+.main {
+    background-color: rgb(245,245,245);
+    overflow-x: hidden;
+
+}
+
+.page1 {
+    height: 100vh;
+    width: 100vw;
+
+}
+.intro {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 48% 12% 38%;
+    grid-template-rows: 5% 14% 12% 12% 23% 23% 11% ;
+
+}
+
+.nav {
+    grid-row: 1;
+    grid-column: 1 / 4;
+    font-family: "Montreal";
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    padding: 15px;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 1vw;
+    position: fixed;
+}
+.text1 {
+    grid-row: 2 / 4;
+    grid-column: 1 / 3;
+    color: #174727;
+    font-family: "Montreal";
+    padding-top: 0;
+    font-size: 10vw;
+    font-weight: 900;
+    padding-left: 1vw;
+    text-wrap:nowrap;
+    line-height: 12vw;
+    display: flex;
+}
+.name1 {
+    color: #b6b6f2;
+    width: fit-content;
+    animation-name: spin;
+    animation-timing-function: linear;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+    
+}
+
+@keyframes lefts {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes rights {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.moving1 {
+    border-top:1px solid #426852;
+    border-bottom:1px solid #426852;
+    padding: 5px;
+    /* margin-top: 1vh; */
+    /* margin-bottom: 1vh; */
+    white-space: nowrap;
+    /* for displaying inlines outside the page */
+    /* overflow-x: auto; */
+}
+.love {
+    text-align: end;
+    font-family: "Cormorant";
+    font-size: 1.5vw;
+    font-style: italic;
+    font-weight: 500;
+    opacity: 0.5;
+
+}
+.moving1 p {
+    display: inline-block;
+    font-family: "Cormorant";
+    font-size: 1.7vw;
+    font-style: italic;
+    color: #174727;
+    animation-name: lefts;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    font-weight: 600;
+
+}
+.idc {
+    color:#5a5ae0;
+}
+
+
+.rotating {
+    position: absolute;
+    font-size: 26vh;
+    top: 337%;
+    z-index: 0;
+    left: 43.5%;
+    animation-name: spin;
+    animation-timing-function: linear;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    color: #5a5ae0;
+}
+
+.name3 {
+    color: #b6b6f2;
+    width: fit-content;
+    line-height: 12vw;
+    animation-name: spin;
+    animation-timing-function: linear;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+.name2 {
+    font-size: 5vw;
+    line-height: 16vw;
+    font-family: "Montreal2";
+}
+
+.text2 {
+    grid-row: 3 / 6;
+    grid-column: 3;
+    color: #174727;
+    font-family: "Cormorant";
+    font-weight: 200;
+    text-align: start;
+    font-style: italic;
+    font-size: 16vw;
+    font-size: 500;
+    line-height: 10vw;
+}
+.text3 {
+    grid-row: 5;
+    grid-column: 1;
+    color: #174727;
+    font-family: "Montreal";
+    text-align: start;
+    font-size: 1.3vw;
+    margin-left: 30px;
+    margin-top: 100px;
+}
+.text4 {
+    grid-row: 6;
+    grid-column: 1 / 4;
+}
+.marquee {
+    grid-column: 1 / 4;
+    grid-row: 7;
+}
+.page2 {
+    height: 250vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+.heading {
+    height:19vh;
+    width: 100vw;
+    display: flex;
+    transform
+}
+
+@keyframes whois {
+    0% {
+        transform: rotate(20deg);
+    }
+    50% {
+        transform: rotate(-20deg);
+    }
+    100% {
+        transform: rotate(20deg);
+        
+    }
+    
+}
+
+.featured {
+    font-size: 7vw;
+    font-family: "Montreal";
+    font-weight: 500;
+    margin-left: 21px;
+    line-height: 13vw;
+    color: #174727;
+}
+.work {
+    font-size: 7vw;
+    font-family: "Cormorant";
+    font-style: italic;
+    font-weight: 500;
+    line-height: 14vw;
+    color: #174727;
+    animation: whois 5s infinite;
+    /* filter: blur(1px); */
+
+}
+.projects {
+    height: 235vh;
+    width: 100vw;
+    background-color: #E4E4F0;
+    z-index: 200;
+    position: relative;
+
+}
+.project1{
+    height: 54vh;
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #174727;
+
+}
+.project {
+    height: 47vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #174727;
+}
+.name {
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #174727;
+    font-family: "Montreal2";
+    font-size: 3vw;
+    font-weight: 500;
+
+}
+.one {
+    display: flex;
+    gap:10px;
+}
+.info {
+    width: 35vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #426852;
+    font-family: "Montreal";
+    font-size: 1.15vw;
+    font-weight: 400;
+}
+.tech {
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #174727;
+    font-family: "Montreal";
+    font-size: 1.2vw;
+    margin-top: 40px;
+
+}
+
+.photo {
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #174727;
+    font-family: "Montreal2";
+    padding-left: 200px;
+    padding-right: 50px;
+}
+.hi2 {
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.who {
+    font-family: "Cormorant";
+    font-size: 1.5vw;
+    font-weight: 500;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+img {
+    height: 80%;
+    width: 80%;;
+    border-radius: 30%;   
+    object-fit:cover;
+}
+.xyz {
+    color:#b6b6f2;
+    animation: spin 7s linear infinite;
+    font-size: 40px;
+}
+
+.viewall {
+    height: 34vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montreal";
+    font-size: 1.3vw;
+
+
+}
+.viewall a {
+    color: #7f7fe8;
+}
+.page3 {
+    margin-top: 300px;
+    height: 100vh;
+    width: 100vw;
+    margin-left: 50px;
+    overflow: hidden;
+
+}
+.small {
+    font-family: "Montreal";
+    font-size: 3vh;
+    color: #174727;
+    margin-left: 15px;
+}
+.large {
+    margin-top: 10px;
+    font-family: "Montreal";
+    font-size: 15vh;
+    color: #174727;
+    
+
+}
+.you {
+    margin-top: 10px;
+    font-family: "Montreal";
+    font-size: 21vh;
+    color: #174727;
+    display: flex;
+
+}
+
+.abc {
+    font-family: "Cormorant";
+    font-style: italic;
+    font-weight: 500;
+}
+.page4 {
+    height: 110vh;
+    width: 100vw;
+    background-color: #E4E4F0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.left {
+    width: 34vw;
+    height: 80vh;
+}
+/* .page4 div {
+    border:1px solid black
+} */
+.tleft {
+    display: flex;
+    padding-top: 30vh;
+}
+.bleft {
+    color: #426852;
+    font-family: "Montreal";
+    font-size: 1.15vw;
+    font-weight: 400;
+    padding-left: 40vh;
+}
+.topleft {
+    color: #426852;
+    font-family: "Montreal";
+    font-size: 1.15vw;
+    font-weight: 400;
+
+}
+.elem1 {
+    font-size: 15vh;
+    font-family: "Montreal";
+    color: #174727;
+}
+.elem2 {
+    font-family: "Cormorant";
+    font-size: 20vh;
+    line-height: 16vh;
+    font-weight: 550;
+    font-style: italic;
+    color: #174727;
+}
+
+.right {
+    width:60vw;
+    height: 80vh;
+    padding: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text11{
+    margin-top: 10vh;
+}
+.first {
+    display: flex;
+    height:17vh;
+    margin: 3vw;;
+    border-bottom: 1px solid #174727;
+}
+.text11 div:nth-child(3) {
+    border: none;
+}
+.idk {
+    color:#174727;
+    font-style: italic;
+    font-family: "Unna";
+    font-size: 1.25vw;
+    font-weight: 600;
+}
+.leftie {
+    font-size: 4vh;
+    font-family: "Montreal";
+    color : rgb(49, 43, 24);
+    width : 38vh;
+    font-weight: 500;
+    /* font-style: italic; */
+    display: flex;
+
+}
+.rightie {
+    font-size: 2.4vh;
+    font-family: "Montreal";
+    color: #174727;
+    width: 70vh;
+    /* display: flex;;
+    justify-content: flex-start */
+    align-items: ;
+}
+.hht {
+    width: 2vw;
+    height: 2vw;
+    line-height: 1.9vw;
+    font-size: 2vw;
+    color: #5a5ae0;
+}
+.page5 {
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+}
+.left1 {
+    width:50vw;
+    height: 59vh;;
+}
+.right1 {
+    width: 50vw;;
+    height: 59vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5vh;
+    font-family: "Montreal";
+    color: #174727
+
+}
+.lets {
+    margin-left: 5vh;
+    margin-top:1vh ;
+    font-size: 15vh;
+    font-family: "Montreal";
+    color: #174727
+}
+.collab {
+    margin-left: 5vh;
+    font-family: "Cormorant";
+    font-size: 18vh;
+    font-weight: 600;
+    font-style: italic;
+    color: #174727;
+}
+.pqr {
+    margin-top: 5vh;
+    margin-left: 5vh;
+    height: fit-content;
+    width: fit-content;
+    color:#5a5ae0
+;}
+.at {
+    font-size: 3vh;
+    color: #7f7fe8;
+}
+.page3 div {
+    overflow: hidden;
+    max-height: fit-content;
+    max-width: fit-content;
+}
